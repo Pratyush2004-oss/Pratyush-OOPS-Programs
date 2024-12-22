@@ -15,7 +15,6 @@ public:
         cout << endl << "Your account number is : " << accountNumber;
     }
 };
-
 class SBI : public Bank{
 public:
     void calculateIntrest(float Balance){
@@ -28,7 +27,10 @@ public:
 };
 
 int main(){
-    SBI Pratyush;
-    Pratyush.showInfo(80575);
-    Pratyush.calculateIntrest(5000);
+    SBI User_1;
+    User_1.showInfo(80575);
+    User_1.calculateIntrest(5000);
 }
+
+
+
