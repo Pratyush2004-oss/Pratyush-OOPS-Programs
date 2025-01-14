@@ -15,7 +15,8 @@ public:
         cout << "Enter the width : ";
         cin >> width;
     }
-    void compute_Area() {};
+    virtual void compute_Area() = 0;         // pure virtual function
+
 };
 
 class Rectangle : public Shapes
