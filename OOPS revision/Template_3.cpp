@@ -15,11 +15,11 @@ public:
     }
     void display()
     {
-        cout << data1 << " \t" << data2;
+        cout << this->data1 << " \t" << this->data2;
     }
 };
 
 int main() {
-    myClass <int, string> obj(10, "Hello");
+    myClass <string, int> obj("Hello", 'h');
     obj.display();
 }
