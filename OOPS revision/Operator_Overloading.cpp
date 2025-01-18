@@ -21,6 +21,6 @@ class String {
 
 int main(){
     String s1("Hello"), s2("Hello"), s3("Hii");
-    s1.operator==(s2);    
-    s1.operator==(s3);
+    s1 ==(s2);    
+    s1 ==(s3);
 }

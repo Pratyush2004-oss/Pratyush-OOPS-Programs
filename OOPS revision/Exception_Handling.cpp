@@ -14,7 +14,7 @@ int main()
 
         if (amount < 0)
         {
-            cout << "Amount can't be zero" << endl;
+            throw invalid_argument("amount can't be less than zero");
         }
 
         balance = balance + amount;
@@ -29,7 +29,8 @@ int main()
             {
                 throw invalid_argument("amount can't be less than zero");
             }
-            if(amount > balance){
+            if (amount > balance)
+            {
                 throw runtime_error("insufficient balance");
             }
             balance = balance - amount;
