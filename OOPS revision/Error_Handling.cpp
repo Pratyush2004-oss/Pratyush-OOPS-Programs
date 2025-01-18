@@ -9,13 +9,13 @@ int main(){
 
     try{
         if(demoniator == 0){
-            throw demoniator;
+            throw runtime_error ("Division by zero is not possible");
         }
         int result = numenator / demoniator;
         cout << "Result : " << result;
     }
-    catch(int x){
-        cout<<"Error : division with " << x << " is not possible" << endl;
+    catch(exception& e){
+        cout << e.what();
     }
     
     return 0;
